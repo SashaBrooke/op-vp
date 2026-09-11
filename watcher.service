@@ -1,0 +1,16 @@
+[Unit]
+Description=OPVP Watcher Service
+After=network.target
+
+[Service]
+User=sbrooke
+
+WorkingDirectory=/home/sbrooke/op-vp
+
+ExecStartPre=/bin/sleep 5
+
+ExecStart=/bin/bash ./watcher.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
