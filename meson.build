@@ -1,4 +1,4 @@
-project('my_app', 'cpp',
+project('opvp', 'cpp',
   version: '1.0.0',
   default_options: ['cpp_std=c++17', 'buildtype=release', 'werror=true', 'warning_level=3']
 )
@@ -15,10 +15,10 @@ boost_program_options_dep = declare_dependency(
 )
 
 rpicam_include_dirs = include_directories(
-    '/usr/local/include/rpicam-apps'
+  '/usr/local/include/rpicam-apps'
 )
 
-exe = executable('my_app',
+exe = executable('opvp',
   src_files,
   include_directories: ['include'] + rpicam_include_dirs,
   dependencies: [
