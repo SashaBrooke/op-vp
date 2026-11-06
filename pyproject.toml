@@ -1,0 +1,13 @@
+[project]
+name = "op-vp"
+version = "0.1.0"
+description = "OhPossum Video Processor"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "lap>=0.5.14",
+    "numpy>=2.5.4",
+    "opencv-python>=5.0.0.93",
+    "pyserial>=3.5",
+    "ultralytics>=8.4.203",
+]

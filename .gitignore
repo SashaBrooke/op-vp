@@ -1,0 +1,28 @@
+# --- Python Environment & Dependencies ---
+.venv/
+venv/
+ENV/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.uv/
+
+# --- Machine Learning Weights & Assets ---
+*.pt
+*.hef
+hailo_models/
+.ultralytics/
+
+# --- Project Specific Media Pipelines ---
+media/*
+!media/car_occlusion.mp4 # Keep as a test file
+!media/.gitkeep
+
+# --- IDEs and User Settings ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
