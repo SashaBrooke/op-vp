@@ -1,0 +1,30 @@
+# --- Build Directories ---
+build/
+builddir/
+
+# --- Deep Learning Model Files ---
+models/
+
+# --- Python Environments and Caches ---
+.venv/
+venv/
+env/
+.env/
+.envs/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.uv/
+
+# --- Media ---
+output/
+media/*
+
+# Keep testing file
+!media/car_occlusion.mp4
+
+# --- Miscellaneous OS Artifacts ---
+.DS_Store
+Thmubs.db

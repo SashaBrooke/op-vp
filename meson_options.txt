@@ -1,0 +1,2 @@
+option('platform', type: 'combo', choices: ['desktop', 'rpi5'], value: 'rpi5',
+       description: 'Target hardware')
